@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "bun buildindex.ts > index.js"
+  }
+}
