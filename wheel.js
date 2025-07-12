@@ -15,8 +15,11 @@ var addRandomizer = function(tags, name) {
         },
         onLoad(e) {
           e.addEventListener("click", () => {
+            if (tags.length === 0)
+              return;
             const index = Math.floor(Math.random() * tags.length);
-            tagdisplay.innerText += " " + tags[index];
+            const tag = tags.splice(index, 1);
+            tagdisplay.innerText += " " + tag[0];
           });
         }
       },
