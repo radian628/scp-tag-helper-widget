@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "build": "bun buildindex.ts > index.js"
+    "build": "bun build index.ts > index.js",
+    "wheel": "bun build wheel.ts > wheel.js"
   }
 }
