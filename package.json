@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "bun build index.ts > index.js",
+    "build": "bun build *.ts --outdir ./",
     "wheel": "bun build wheel.ts > wheel.js"
   }
 }
